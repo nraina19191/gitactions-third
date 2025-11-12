@@ -1,0 +1,12 @@
+name: Issue Action
+on:
+  issues:
+    types: [opened]
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Issue Context
+        run: |
+          echo '${{github}}'
+          echo '${{env}}'
