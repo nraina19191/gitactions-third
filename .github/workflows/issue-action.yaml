@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Show Issue Context
         run: |
-          echo '${{github}}'
-          echo '${{env}}'
+          echo '${{toJson(github)}}'
+          echo '${{toJson(env)}}'
